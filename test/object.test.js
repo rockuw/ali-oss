@@ -105,6 +105,18 @@ describe('test/object.test.js', function () {
     });
   });
 
+  describe('getObjectUrl()', function () {
+    it('should return object url', function* () {
+      var name = 'test.js';
+      var url = yield this.store.getObjectUrl(name);
+      assert.equal(url, 'http://' + this.bucket + '.' + this.region + '.aliyuncs.com/' + name);
+      var inter = yield this.store.getObjectUrl(name, true);
+      assert.equal(inter, 'http://' + this.bucket + '.' + this.region + '-internal' + '.aliyuncs.com/' + name);
+      var outer = yield this.store.getObjectUrl(name, false);
+      assert.equal(outer, 'http://' + this.bucket + '.' + this.region + '.aliyuncs.com/' + name);
+    });
+  });
+
   describe('put()', function () {
     it('should add object with local file path', function* () {
       var name = prefix + 'ali-sdk/oss/put-localfile.js';

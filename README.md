@@ -66,6 +66,7 @@ OSS, Open Storage Service. Equal to well known Amazon [S3](http://aws.amazon.com
   - [.list*(query[, options])](#listquery-options)
   - [.put*(name, file[, options])](#putname-file-options)
   - [.putStream*(name, stream[, options])](#putstreamname-stream-options)
+  - [.getObjectUrl(name[, internal])](#getobjecturlname-internal)
   - [.head*(name[, options])](#headname-options)
   - [.get*(name, file[, options])](#getname-file-options)
   - [.getStream*(name[, options])](#getstreamname-options)
@@ -829,6 +830,9 @@ console.log(object);
   }
 }
 ```
+
+### .getObjectUrl(name[, internal])
+Get the Object url. If internal is true, return the internal url.
 
 ### .head*(name[, options])
 
