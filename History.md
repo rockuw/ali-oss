@@ -1,4 +1,72 @@
 
+4.1.4 / 2016-01-27
+==================
+
+  * Update version in package.json
+  * Release 4.1.2
+  * Release 4.1.1
+  * deps: update dependencies
+  * update dist
+  * add build-dist script
+  * Release 4.1.0
+  * refine put/putStream interfaces
+  * add putACL & getACL
+  * fix bug when endpoint is IP with port
+  * use sts.us-west for sts test
+  * Release 4.0.1
+  * add bower.json
+  * add filereader dev-dependency
+  * add web file (mock) test for multipart.test
+  * add error case for sts.test
+  * fix IE10 compatibility and refine test
+  * chore: fix readme
+  * Release 4.0.0
+  * build: only test on 4&5
+  * add .babelrc
+  * use readAsArrayBuffer for IE11 doesn't support readAsBinaryString
+  * reduce putBucketACL() case
+  * avoid putBucketACL() timeout
+  * sleep logger in bucket.test.js
+  * add node 5 and tidy .travis.yml
+  * use ms to tidy code
+  * Wait some time in test for bucket meta sync
+  * make region configurable
+  * test travis ci
+  * Set sts client default timeout to 60s
+  * test travis ci
+  * handle policy string in STS
+  * fix cdn addr
+  * use utility.escape
+  * chore(package): update autod to version 2.4.2
+  * refine as review comments
+  * add object key encoding test
+  * refine bucket test
+  * add content type test
+  * add browser usage in README
+  * signatureUrl() supports STS
+  * refine as review comments
+  * chore(package): update merge-descriptors to version 1.0.1
+  * add policy to STS assumeRole
+  * correct author & cont. remove indent tabs
+  * expose .putData as public function
+  * remove indent tabs
+  * add comments to browser.js
+  * add browser.js and change 'let' to 'var'
+  * move multipart into a separate file
+  * refine subres
+  * rich multipart test
+  * support STS in oss client
+  * add STS client, test pass
+  * fix bug in uploadPart, and refine multipart test
+  * support generator progress callback
+  * add progress callback
+  * browser multipartUpload test pass
+  * multipart for server test pass
+  * fix object url
+  * pass all tests
+  * refine client constructor to handle endpoint/ip/cname/region
+  * Change 'Date' header to 'x-oss-date' for browser compatibility
+
 4.1.2 / 2016-01-27
 ==================
 
